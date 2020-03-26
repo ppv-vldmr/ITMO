@@ -1,0 +1,3 @@
+C:/Users/vovan/Desktop/term-2/lab-4/4-c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/vovan/Desktop/term-2/lab-4/4-c/cmake-build-debug/CMakeFiles/4_c.dir
+C:/Users/vovan/Desktop/term-2/lab-4/4-c/cmake-build-debug/CMakeFiles/edit_cache.dir

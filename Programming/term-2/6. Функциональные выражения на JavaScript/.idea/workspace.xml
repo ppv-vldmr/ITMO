@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="020f57fb-e9dc-46b6-8668-6edee2953bf2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZFU4dF4EfoKtPYhLRAUkthcwgG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vovan\Desktop\javascript\src\jstest" />
+      <recent name="C:\Users\vovan\Desktop\javascript\src\jstest\functional" />
+      <recent name="C:\Users\vovan\Desktop\javascript\src" />
+      <recent name="C:\Users\vovan\Desktop\testJS\src" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="java --module-path=graal -cp . RunJS" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.FunctionalCubeTest">
+    <configuration name="FunctionalCubeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jstest.functional.FunctionalCubeTest" />
+      <module name="6. Функциональные выражения на JavaScript" />
+      <option name="PROGRAM_PARAMETERS" value="hard" />
+      <option name="VM_PARAMETERS" value="-ea --module-path=graal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jstest.functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionalExpressionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jstest.functional.FunctionalExpressionTest" />
+      <module name="6. Функциональные выражения на JavaScript" />
+      <option name="PROGRAM_PARAMETERS" value="easy" />
+      <option name="VM_PARAMETERS" value="-ea --module-path=graal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jstest.functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionalPieSinCosTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jstest.functional.FunctionalPieSinCosTest" />
+      <module name="6. Функциональные выражения на JavaScript" />
+      <option name="PROGRAM_PARAMETERS" value="hard" />
+      <option name="VM_PARAMETERS" value="-ea --module-path=graal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jstest.functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionalPieTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jstest.functional.FunctionalPieTest" />
+      <module name="6. Функциональные выражения на JavaScript" />
+      <option name="PROGRAM_PARAMETERS" value="easy" />
+      <option name="VM_PARAMETERS" value="-ea --module-path=graal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jstest.functional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jstest.functional.FunctionalMiniTest" />
+      <module name="6. Функциональные выражения на JavaScript" />
+      <option name="PROGRAM_PARAMETERS" value="easy" />
+      <option name="VM_PARAMETERS" value="-ea --module-path=graal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" path-to-node="$APPLICATION_CONFIG_DIR$/node/node-v12.13.1-win-x64/node" path-to-js-file="$PROJECT_DIR$/src/functionalMiniExpression.js">
+      <method v="2" />
+    </configuration>
+    <configuration name="functionalExpression.js" type="NodeJSConfigurationType" temporary="true" path-to-node="$APPLICATION_CONFIG_DIR$/node/node-v12.13.1-win-x64/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/functionalExpression.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.FunctionalExpressionTest" />
+      <item itemvalue="Application.FunctionalPieTest" />
+      <item itemvalue="Application.FunctionalPieSinCosTest" />
+      <item itemvalue="Application.FunctionalCubeTest" />
+      <item itemvalue="Node.js.functionalExpression.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FunctionalCubeTest" />
+        <item itemvalue="Node.js.functionalExpression.js" />
+        <item itemvalue="Application.FunctionalPieSinCosTest" />
+        <item itemvalue="Application.FunctionalPieTest" />
+        <item itemvalue="Application.FunctionalExpressionTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="020f57fb-e9dc-46b6-8668-6edee2953bf2" name="Default Changelist" comment="" />
+      <created>1584434145638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584434145638</updated>
+      <workItem from="1584434149733" duration="626000" />
+      <workItem from="1584434818790" duration="447000" />
+      <workItem from="1584435889852" duration="1840000" />
+      <workItem from="1584469980136" duration="6489000" />
+      <workItem from="1584477052398" duration="4271000" />
+      <workItem from="1584525006838" duration="3064000" />
+      <workItem from="1584530242306" duration="1602000" />
+      <workItem from="1584643648196" duration="102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="7" key="#Inspections" timestamp="1584477977807">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="7" key="#Inspections/0.0.1280.689@0.0.1280.689" timestamp="1584477977807" />
+    <state x="129" y="6" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584643684809">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="129" y="6" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1584643684809" />
+    <state x="371" y="135" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584434614318">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="135" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.689@0.0.1280.689" timestamp="1584434614318" />
+    <state x="371" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584526695936">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1584526695936" />
+    <state x="421" y="103" key="FileChooserDialogImpl" timestamp="1584436697853">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="103" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1584436697853" />
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1584643750264">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1584643750264" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1584643750263">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1584643750263" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1584643750263">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1584643750263" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1584643750263">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1584643750263" />
+    <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1584528663005">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1584528663005" />
+    <state width="1237" height="208" key="GridCell.Tab.1.center" timestamp="1584528663004">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1584528663004" />
+    <state width="1237" height="208" key="GridCell.Tab.1.left" timestamp="1584528663004">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1584528663004" />
+    <state width="1237" height="208" key="GridCell.Tab.1.right" timestamp="1584528663004">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1584528663004" />
+    <state width="1237" height="208" key="GridCell.Tab.2.bottom" timestamp="1584528663007">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1584528663007" />
+    <state width="1237" height="208" key="GridCell.Tab.2.center" timestamp="1584528663006">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1584528663006" />
+    <state width="1237" height="208" key="GridCell.Tab.2.left" timestamp="1584528663006">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1584528663006" />
+    <state width="1237" height="208" key="GridCell.Tab.2.right" timestamp="1584528663006">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1584528663006" />
+    <state width="1237" height="208" key="GridCell.Tab.3.bottom" timestamp="1584528663008">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.3.bottom/0.0.1280.689@0.0.1280.689" timestamp="1584528663008" />
+    <state width="1237" height="208" key="GridCell.Tab.3.center" timestamp="1584528663008">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.3.center/0.0.1280.689@0.0.1280.689" timestamp="1584528663008" />
+    <state width="1237" height="208" key="GridCell.Tab.3.left" timestamp="1584528663007">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.3.left/0.0.1280.689@0.0.1280.689" timestamp="1584528663007" />
+    <state width="1237" height="208" key="GridCell.Tab.3.right" timestamp="1584528663008">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="208" key="GridCell.Tab.3.right/0.0.1280.689@0.0.1280.689" timestamp="1584528663008" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1584473861818">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584473861818" />
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584530353662">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1584530353662" />
+    <state x="93" y="93" width="1095" height="504" key="dock-window-1" timestamp="1584526565191">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="dock-window-1/0.0.1280.689@0.0.1280.689" timestamp="1584526565191" />
+    <state x="297" y="153" width="672" height="677" key="run.anything.popup" timestamp="1584434494684">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="297" y="153" width="672" height="677" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1584434494684" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1584480548572">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1584480548572" />
+  </component>
+</project>
