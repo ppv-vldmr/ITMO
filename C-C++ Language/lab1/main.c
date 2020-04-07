@@ -382,9 +382,8 @@ void utf32_to_utf8(FILE *in, FILE *out, _Bool endian) {
 }
 
 int main(int argc, char *argv[]) {
-    if (argc != 5) {
-        printf("Wrong count of program arguments.\nExpectred: 4\nActual: %d\n", argc - 1);
-        printf("Arguments: \"lab1\", input file, output file, type of output encoding.\n");
+    if (argc != 4) {
+        printf("Wrong count of program arguments.\nExpectred: 4\nActual: %d\n", argc);
         printf("Output encoding types:\n"
                "0) utf-8 without BOM\n"
                "1) utf-8 with BOM\n"
@@ -394,15 +393,15 @@ int main(int argc, char *argv[]) {
                "5) utf-32 BE\n");
         exit(1);
     }
-    FILE *input = fopen(argv[2],"r");
+    FILE *input = fopen(argv[1],"rb");
     if (!input) {
         printf("An error has occured with opening input file.\n");
         exit(1);
     }
     int in_mode = read_input_BOM(input);
 
-    FILE *output = fopen(argv[3],"w");
-    int out_mode = atoi(argv[4]);
+    FILE *output = fopen(argv[2],"w");
+    int out_mode = atoi(argv[3]);
     push_output_BOM(output, out_mode);
 
     //Big endian -> 0
