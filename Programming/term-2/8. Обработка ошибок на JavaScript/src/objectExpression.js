@@ -42,118 +42,72 @@ function Variable(name) {
 //===================
 
 //=====UNARY===OPERATIONS=====
-function Negate(value) {
+function UnaryOperation(value, operationType, func) {
     this.value = value;
+    this.operationType = operationType;
+    this.func = func;
 
-    Negate.prototype.toString = function() {
-        return this.value.toString() + " negate";
+    UnaryOperation.prototype.toString = function() {
+        return this.value.toString() + " " + this.operationType;
     };
 
-    this.evaluate = function(valueX, valueY, valueZ) {
-        return -this.value.evaluate(valueX, valueY, valueZ);
+    UnaryOperation.prototype.evaluate = function(valueX, valueY, valueZ) {
+        return this.func(this.value.evaluate(valueX, valueY, valueZ));
     };
 
-    this.prefix = function() {
-        return "(negate " + this.value.prefix() + ")";
+    UnaryOperation.prototype.prefix = function() {
+        return "(" + this.operationType + " " + this.value.prefix() + ")";
     }
 }
+
+let Negate = function(value) {
+    return new UnaryOperation(value, "negate", (a) => -a);
+};
+
+let ArcTan = function (value) {
+    return new UnaryOperation(value, "atan", (a) => Math.atan(a));
+};
+
+let Exp = function(value) {
+    return new UnaryOperation(value, "exp", (a) => Math.exp(a));
+};
 //============================
 
 //=====BINARY===OPERATIONS=====
-function AbstractBinaryOperation(left, right, operationType) {
+function BinaryOperation(left, right, operationType, func) {
     this.left = left;
     this.right = right;
     this.operationType = operationType;
+    this.func = func;
 
-    AbstractBinaryOperation.prototype.toString = function() {
+    BinaryOperation.prototype.toString = function() {
         return this.left.toString() + " " + this.right.toString() + " " + this.operationType;
     };
 
-    AbstractBinaryOperation.prototype.evaluate = function(valueX, valueY, valueZ) {
-        switch (this.operationType) {
-            case "+":
-                return this.left.evaluate(valueX, valueY, valueZ) + this.right.evaluate(valueX, valueY, valueZ);
-                case "-":
-                    return this.left.evaluate(valueX, valueY, valueZ) - this.right.evaluate(valueX, valueY, valueZ);
-                case "*":
-                    return this.left.evaluate(valueX, valueY, valueZ) * this.right.evaluate(valueX, valueY, valueZ);
-                case "/":
-                    return this.left.evaluate(valueX, valueY, valueZ) / this.right.evaluate(valueX, valueY, valueZ);
-            }
+    BinaryOperation.prototype.evaluate = function(valueX, valueY, valueZ) {
+        return this.func(this.left.evaluate(valueX, valueY, valueZ), this.right.evaluate(valueX, valueY, valueZ));
     };
 
-    AbstractBinaryOperation.prototype.prefix = function() {
+    BinaryOperation.prototype.prefix = function() {
         return "(" + this.operationType + " " + this.left.prefix() + " " + this.right.prefix() + ")";
     }
 }
 
-function Add(left, right) {
-    this.add = Object.create(AbstractBinaryOperation.prototype);
-    AbstractBinaryOperation.call(this.add, left, right, "+");
+let Add = function(left, right) {
+    return new BinaryOperation(left, right, "+", (a, b) => a + b);
+};
 
-    this.evaluate = function(valueX, valueY, valueZ) {
-        return this.add.evaluate(valueX, valueY, valueZ);
-    };
+let Subtract = function(left, right) {
+    return new BinaryOperation(left, right, "-", (a, b) => a - b);
+};
 
-    this.toString = function() {
-        return this.add.toString();
-    };
+let Multiply = function(left, right) {
+    return new BinaryOperation(left, right, "*", (a, b) => a * b);
+};
 
-    this.prefix = function() {
-        return this.add.prefix();
-    };
-}
-
-function Subtract(left, right) {
-    this.subtract = Object.create(AbstractBinaryOperation.prototype);
-    AbstractBinaryOperation.call(this.subtract, left, right, "-");
-
-    this.evaluate = function (valueX, valueY, valueZ) {
-        return this.subtract.evaluate(valueX, valueY, valueZ);
-    };
-
-    this.toString = function () {
-        return this.subtract.toString();
-    };
-
-    this.prefix = function() {
-        return this.subtract.prefix();
-    };
-}
-
-function Multiply(left, right) {
-    this.multiply = Object.create(AbstractBinaryOperation.prototype);
-    AbstractBinaryOperation.call(this.multiply, left, right, "*");
-
-    this.evaluate = function (valueX, valueY, valueZ) {
-        return this.multiply.evaluate(valueX, valueY, valueZ);
-    };
-
-    this.toString = function () {
-        return this.multiply.toString();
-    };
-
-    this.prefix = function() {
-        return this.multiply.prefix();
-    };
-}
-
-function Divide(left, right) {
-    this.divide = Object.create(AbstractBinaryOperation.prototype);
-    AbstractBinaryOperation.call(this.divide, left, right, "/");
-
-    this.evaluate = function (valueX, valueY, valueZ) {
-        return this.divide.evaluate(valueX, valueY, valueZ);
-    };
-
-    this.toString = function () {
-        return this.divide.toString();
-    };
-
-    this.prefix = function() {
-        return this.divide.prefix();
-    };
-}
+let Divide = function(left, right) {
+    return new BinaryOperation(left, right, "/", (a, b) => a / b);
+};
 //=============================
 
 //=====OTHER===OPERATIONS=====
@@ -164,7 +118,7 @@ function Min3(value1, value2, value3) {
     this.listValue[2] = value3;
     this.min = value1;
 
-    this.evaluate = function(valueX, valueY, valueZ) {
+    this.evaluate = function (valueX, valueY, valueZ) {
         for (let i = 0; i < 3; i++) {
             if (this.listValue[i].evaluate(valueX, valueY, valueZ) <= this.min.evaluate(valueX, valueY, valueZ))
                 this.min = this.listValue[i];
@@ -172,7 +126,7 @@ function Min3(value1, value2, value3) {
         return this.min.evaluate(valueX, valueY, valueZ);
     };
 
-    this.toString = function() {
+    this.toString = function () {
         let result = "";
         for (let i = 0; i < 3; i++) {
             result += this.listValue[i].toString() + " ";
@@ -180,15 +134,6 @@ function Min3(value1, value2, value3) {
         result += "min3";
         return result;
     };
-
-    this.prefix = function() {
-        let result = "(min3";
-        for (let i = 0; i < 3; i++) {
-            result += " " + this.listValue[i].prefix();
-        }
-        result += ")";
-        return result;
-    }
 }
 
 function Max5(value1, value2, value3, value4, value5) {
@@ -215,19 +160,9 @@ function Max5(value1, value2, value3, value4, value5) {
         }
         result += "max5";
         return result;
-    };
-
-    this.prefix = function() {
-        let result = "(max5";
-        for (let i = 0; i < 5; i++) {
-            result += " " + this.listValue[i].prefix();
-        }
-        result += ")";
-        return result;
     }
 }
 //============================
-
 
 //=====PARSERS=====
 function parse(source) {
@@ -328,6 +263,8 @@ function parsePrefix(source) {
 
     const UNARY_OPERATIONS = {
         "negate": Negate,
+        "atan": ArcTan,
+        "exp": Exp
     };
 
     let tokens = source.match(/\(|\)|[^)(\s]+/g);
@@ -395,9 +332,6 @@ function parsePrefix(source) {
         } else {
             throw new ParserError("Unexpected token: " + token);
         }
-        // if (tokens.level !== 0) {
-        //     throw new ParserError("Parenthesis not closed");
-        // }
     }
 
     let result = getExpr(tokens.next);
@@ -412,5 +346,3 @@ function parsePrefix(source) {
         else
             throw new ParserError("Not enough opening parenthesis");
 }
-
-//console.log(parsePrefix("(- x 2))").prefix());
