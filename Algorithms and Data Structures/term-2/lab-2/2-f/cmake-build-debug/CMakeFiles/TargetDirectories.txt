@@ -1,0 +1,3 @@
+C:/Users/vovan/Desktop/ITMO/ITMO/Algorithms and Data Structures/term-2/lab-2/2-f/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vovan/Desktop/ITMO/ITMO/Algorithms and Data Structures/term-2/lab-2/2-f/cmake-build-debug/CMakeFiles/2_f.dir
+C:/Users/vovan/Desktop/ITMO/ITMO/Algorithms and Data Structures/term-2/lab-2/2-f/cmake-build-debug/CMakeFiles/rebuild_cache.dir
