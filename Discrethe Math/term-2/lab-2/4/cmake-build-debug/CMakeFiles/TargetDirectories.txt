@@ -1,0 +1,3 @@
+C:/Users/vovan/Desktop/cf-grammar/4/cmake-build-debug/CMakeFiles/4.dir
+C:/Users/vovan/Desktop/cf-grammar/4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vovan/Desktop/cf-grammar/4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
