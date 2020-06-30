@@ -8,15 +8,9 @@ char start;
 vector<pair<int, int>> rules[1000];
 string s;
 
-void foo(int x) {
-    for (int i = 0; i< x; i++);
-}
-
 bool check(int pos, int v) {
-    foo(15);
     if (pos == s.size()) 
         return (v == -1);
-    foo(20);
     if (v == -1) 
         return false;
     int c = s[pos] - 'a';
@@ -24,7 +18,6 @@ bool check(int pos, int v) {
     for (auto to : rules[v])
         if (to.first == c)
             result |= check(pos + 1, to.second);
-    foo(25);
     return result;
 }
 
