@@ -1,0 +1,4 @@
+D:\apps\CLion\ch-0\202.6109.21\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\vovan\Desktop\lab_4
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/vovan/Desktop/lab_4/cmake-build-debug
