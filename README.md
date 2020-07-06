@@ -5,4 +5,4 @@ Links:
 - [LinAl](http://mathdep.ifmo.ru/mmtp/labs/) labs and statements
 - Programming [statements](http://www.kgeorgiy.info//courses/paradigms/index.html) and [tests](https://www.kgeorgiy.info/git/geo)
 
-~~some solutions might not be uploaded here~~
+~~some solutions might not be uploaded here or have mistakes~~
