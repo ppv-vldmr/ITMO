@@ -2,6 +2,7 @@
 #include <vector>
 #include <iomanip>
 #include <map>
+#include <fstream>
 
 #define BASE 1000000000
 
@@ -58,6 +59,15 @@ public:
         trim();
     }
 
+    long long size() {
+        long long a = digits.back(), p = 0;
+        while (a > 0) {
+            ++p;
+            a /= 10;
+        }
+        return (digits.size() - 1) * digits_width + p;
+    }
+
     void operator = (const big_integer &x) {
         sign = x.sign;
         digits = x.digits;
@@ -99,15 +109,15 @@ public:
 
     bool operator > (const big_integer &value) const {
         if (sign != value.sign) {
-            return sign > value.sign;
+            return this->sign > value.sign;
         }
         if (digits.size() != value.digits.size()) {
-            return digits.size() > value.digits.size();
+            return this->digits.size() > value.digits.size();
         }
         int max_size = digits.size();
         for (int i = max_size - 1; i >= 0; --i) {
             if(digits[i] != value.digits[i]) {
-                return digits[i] > value.digits[i];
+                return this->digits[i] > value.digits[i];
             }
         }
         return false;
@@ -366,8 +376,8 @@ int main(int argc, char** argv) {
         printf("Wrong count of program arguments.\nExpected: 3, found: %d\n", argc);
         return 1;
     }
-    FILE *input = freopen(argv[1], "r", stdin);
-    if (input == NULL) {
+    ifstream fin(argv[1]);
+    if (!fin.is_open()) {
         printf("An error has occurred with input file %s\n", argv[1]);
         return 1;
     }
@@ -387,111 +397,111 @@ int main(int argc, char** argv) {
     };
     big_integer a, b;
     string op;
-    cin >> a >> op;
-    FILE *output = freopen(argv[2], "w", stdout);
-    if (output == NULL) {
+    fin >> a >> op;
+    ofstream fout(argv[2]);
+    if (!fout.is_open()) {
         printf("An error has occurred with output file ", argv[2]);
-        fclose(input);
+        fin.close();
         return 1;
     }
     switch (operations[op]) {
         case 1: {
-            cin >> b;
-            cout << a + b;
+            fin >> b;
+            fout << a + b;
             break;
         }
 
         case 2: {
-            cin >> b;
-            cout << a - b;
+            fin >> b;
+            fout << a - b;
             break;
         }
 
         case 3: {
-            cin >> b;
-            cout << a * b;
+            fin >> b;
+            fout << a * b;
             break;
         }
 
         case 4: {
-            cin >> b;
-            if (b == 0) {
-                cout << "NaN";
+            fin >> b;
+            if (b.size() == 0) {
+                fout << "NaN";
             } else {
-                cout << a / b;
+                fout << a / b;
             }
             break;
         }
 
         case 5: {
-            cin >> b;
-            if (b == 0) {
-                cout << "NaN";
+            fin >> b;
+            if (b.size() == 0) {
+                fout << "NaN";
             } else {
-                cout << a % b;
+                fout << a % b;
             }
             break;
         }
 
         case 6: {
             if (a < 0) {
-                cout << "NaN";
+                fout << "NaN";
             } else {
-                cout << sqrt(a);
+                fout << sqrt(a);
             }
             break;
         }
 
         case 7: {
-            cin >> b;
+            fin >> b;
             bool res = a < b;
-            cout << res;
+            fout << res;
             break;
         }
 
         case 8: {
-            cin >> b;
+            fin >> b;
             bool res = a > b;
-            cout << res;
+            fout << res;
             break;
         }
 
         case 9: {
-            cin >> b;
+            fin >> b;
             bool res = a <= b;
-            cout << res;
+            fout << res;
             break;
         }
 
         case 10: {
-            cin >> b;
+            fin >> b;
             bool res = a >= b;
-            cout << res;
+            fout << res;
             break;
         }
 
         case 11: {
-            cin >> b;
+            fin >> b;
             bool res = a != b;
-            cout << res;
+            fout << res;
             break;
         }
 
         case 12: {
-            cin >> b;
+            fin >> b;
             bool res = a == b;
-            cout << res;
+            fout << res;
             break;
         }
 
         default: {
-            cout << "Wrong operation entered.";
-            fclose(input);
-            fclose(output);
+            fout << "Wrong operation entered.";
+            fin.close();
+            fout.close();
             return 1;
         }
     }
-    fclose(input);
-    fclose(output);
+    fin.close();
+    fout.close();
     return 0;
 }
