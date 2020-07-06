@@ -1,3 +1,0 @@
-D:\apps\CLion\ch-0\201.7223.86\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\6.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\6.dir/objects.a @CMakeFiles\6.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\6.dir/objects.a -Wl,--no-whole-archive  -o 6.exe -Wl,--out-implib,lib6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\6.dir\linklibs.rsp

@@ -1,3 +1,0 @@
-C:/Users/vovan/Desktop/cf-grammar/2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/vovan/Desktop/cf-grammar/2/cmake-build-debug/CMakeFiles/2.dir
-C:/Users/vovan/Desktop/cf-grammar/2/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,3 +1,0 @@
-D:\apps\CLion\ch-0\202.5792.50\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\lab_3.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\lab_3.dir/objects.a @CMakeFiles\lab_3.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\lab_3.dir/objects.a -Wl,--no-whole-archive  -o lab_3.exe -Wl,--out-implib,liblab_3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lab_3.dir\linklibs.rsp

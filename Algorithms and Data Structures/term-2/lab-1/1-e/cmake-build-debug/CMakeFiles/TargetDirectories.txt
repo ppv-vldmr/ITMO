@@ -1,3 +1,0 @@
-C:/Users/vovan/Desktop/term-2/lab-1/4-e/cmake-build-debug/CMakeFiles/4_e.dir
-C:/Users/vovan/Desktop/term-2/lab-1/4-e/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/vovan/Desktop/term-2/lab-1/4-e/cmake-build-debug/CMakeFiles/rebuild_cache.dir
