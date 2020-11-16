@@ -1,0 +1,16 @@
+#!/bin/bash
+
+touch ans5
+
+str="Average_Sleeping_Children_of_ParentID"
+cat ans4 | tr "=" " " |
+awk -F " " -v msg=$str 'BEGIN { PPid = 0 } {
+                          if (PPid == $5) {
+                            SUM += $8; CNT += 1
+                          } else {
+                            print msg"="PPid" is "SUM/CNT
+                            SUM = $8; CNT = 1; PPid = $5
+                          }
+                          print $0
+                        } END { print msg"="PPid" is "SUM/CNT }' |
+sed -e "s/ID /ID=/g" -e "s/Time /Time=/g" > ans5

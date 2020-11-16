@@ -1,0 +1,46 @@
+#!/bin/bash
+
+cnt=1
+oper=1
+
+(tail -f pipe) |
+while true
+do
+	read line
+	case "$line" in
+		QUIT)
+			echo $cnt
+			echo "exit"
+			killall tail
+			kill $(cat gen_pid)
+			exit
+			;;
+		'+')
+			echo $cnt
+			oper=1
+			echo "mode plus"
+			;;
+		'*')
+			echo $cnt
+			oper=2
+			echo "mode multiply"
+			;;
+		*)
+			if [[ $line =~ ^[+-]*[0-9]+$ ]]
+			then
+				if [[ "$oper" -eq "1" ]]
+				then
+					let cnt=$cnt+$line
+				else
+					let cnt=$cnt*$line
+				fi
+				echo $cnt
+			else
+				echo "incorrect input"
+				killall tail
+				kill $(cat gen_pid)
+				exit
+			fi
+			;;
+	esac
+done

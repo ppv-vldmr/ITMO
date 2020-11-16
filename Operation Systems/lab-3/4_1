@@ -1,0 +1,8 @@
+#!/bin/bash
+
+x=0
+echo $$ > 4_pid
+while true
+do
+    x=$x+1
+done

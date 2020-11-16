@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo $$ > gen_pid
+
+while true
+do
+	read line
+	echo "$line" > pipe
+done

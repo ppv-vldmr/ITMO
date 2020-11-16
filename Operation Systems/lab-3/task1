@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir ~/test && 
+{
+    echo "catalog was created succesfully" > ~/report ; 
+    touch ~/test/$(date '+%Y-%m-%d_%H:%M:%S')
+}
+ping -c 1 net_nikogo.ru || echo "$(date '+%Y-%m-%d_%H:%M:%S') ping failed"  >>  ~/report
