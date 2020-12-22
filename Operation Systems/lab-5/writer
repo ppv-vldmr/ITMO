@@ -1,0 +1,21 @@
+#!/bin/bash
+
+pid=$1
+log=$2
+report=$3
+
+[ ! -f $log ] && touch $log
+echo '' > $log
+while true; do
+	top -b -n 1 | grep -q "^[ ]*$pid"
+	[ $? -ne 0 ] && break
+	top -b -n 1 | grep -E "^MiB|^[ ]*PID" >> $log
+	top -b -n 1 | grep -E "^[ ]*$pid" >> $log
+	echo "" >> $log
+	top -b -n 1 | grep -E "^[ ]*[0-9]" | head -n5 >> $log
+	echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_" >> $log
+	sleep 1
+done
+echo "Results: " >> $log
+dmesg | grep $pid | tail -n2 >> $log
+echo "Max size of array: " $(cat $report | tail -n1) >> $log
