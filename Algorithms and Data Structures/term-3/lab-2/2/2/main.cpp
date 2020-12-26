@@ -36,6 +36,11 @@ void dijkstra() {
             }
         }
     }
+    
+    for (int i = 0; i < d.size(); i++) {
+        cout << d[i] << " ";
+    }
+    cout << endl;
 }
  
 int main(int argc, const char * argv[]) {
@@ -55,8 +60,5 @@ int main(int argc, const char * argv[]) {
     
     dijkstra();
     
-    for (int i = 0; i < d.size(); i++) {
-        cout << d[i] << " ";
-    }
     return 0;
 }
