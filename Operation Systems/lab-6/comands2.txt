@@ -1,0 +1,26 @@
+script1.bat :
+
+net share temp="%~dp0net"
+_______________________________
+script2.bat :
+
+forfiles /P "C:\Windows" /C "cmd /c if @fsize GEQ 2097152 copy @path \\%COMPUTERNAME%\temp /Z /Y"
+_______________________________
+script3.bat :
+
+echo "%~dp02_2.bat %1"
+SCHTASKS /create /tn "LAB6_Copy" /tr "%~dp02_2.bat" /sc ONCE /st %1
+_______________________________
+script4.bat:
+
+taskkill /F /T /PID %1
+_______________________________
+script5.bat:
+
+fc /b C:\Windows\%1 \\%COMPUTERNAME%\temp\%1 > nul
+
+if %ERRORLEVEL% == 1 (
+	echo "Files are not identical."
+) else (
+	echo "Files are identical."
+)

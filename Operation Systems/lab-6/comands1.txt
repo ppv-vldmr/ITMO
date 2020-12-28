@@ -1,0 +1,19 @@
+script1.bat :
+
+mkdir LAB6 2> NUL
+wmic os get Caption > LAB6\wmicCaption.txt 
+wmic os get FreePhysicalMemory,TotalVisibleMemorySize > LAB6\wmicMemory.txt 
+wmic logicaldisk get name,description > LAB6\wmicDiscs.txt
+_______________________________
+script2.bat :
+
+mkdir TEST 2> NUL
+copy /y LAB6\* TEST\*
+_______________________________
+script3.bat :
+
+copy /y LAB6\* wmic.txt
+_______________________________
+script4.bat :
+
+rmdir /Q /S TEST LAB6

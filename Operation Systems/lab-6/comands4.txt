@@ -1,0 +1,7 @@
+script1.bat :
+
+driverquery /NH > DRIVERS.txt
+_______________________________
+script2.bat :
+
+sort /R DRIVERS.txt > sorted.txt

@@ -1,0 +1,1 @@
+driverquery /NH > DRIVERS.txt
