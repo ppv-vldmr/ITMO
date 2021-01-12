@@ -1,0 +1,3 @@
+/Users/vladimir/Desktop/lab-2/F. Разноцветные леса/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vladimir/Desktop/lab-2/F. Разноцветные леса/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vladimir/Desktop/lab-2/F. Разноцветные леса/cmake-build-debug/CMakeFiles/F___.dir

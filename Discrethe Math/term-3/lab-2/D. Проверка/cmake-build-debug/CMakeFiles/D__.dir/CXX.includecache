@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vladimir/Desktop/lab-2/D. Проверка/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+set
+-
+cmath
+-
+ctime
+-
+

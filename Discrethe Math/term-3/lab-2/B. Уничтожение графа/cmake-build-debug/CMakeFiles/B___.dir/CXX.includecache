@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vladimir/Desktop/lab-2/B. Уничтожение графа/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+cmath
+-
+

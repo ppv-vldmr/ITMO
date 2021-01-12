@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vladimir/Desktop/lab-2/F. Разноцветные леса/main.cpp
+iostream
+-
+vector
+-
+set
+-
+queue
+-
+algorithm
+-
+cstdio
+-
+cstdlib
+-
+ctime
+-
+

@@ -1,0 +1,3 @@
+/Users/vladimir/Desktop/lab-2/B. Уничтожение графа/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vladimir/Desktop/lab-2/B. Уничтожение графа/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vladimir/Desktop/lab-2/B. Уничтожение графа/cmake-build-debug/CMakeFiles/B___.dir

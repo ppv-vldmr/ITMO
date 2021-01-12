@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vladimir/Desktop/lab-2/C. Паросочетание максимального веса/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+algorithm
+-
+string
+-
+cmath
+-
+
