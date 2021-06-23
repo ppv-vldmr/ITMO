@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Popov Vladimir
+Main-Class: info.kgeorgiy.ja.popov.implementor.Implementor
+Class-Path: artifacts/info.kgeorgiy.java.advanced.implementor.jar
