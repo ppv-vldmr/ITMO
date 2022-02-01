@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-24T20:43:42" hostname="i108585525" time="0.009">
+  <properties/>
+  <testcase name="testSolutionClass" classname="CodeTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

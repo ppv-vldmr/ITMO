@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FAAQueueTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2022-01-24T20:24:23" hostname="i108585525" time="68.84">
+  <properties/>
+  <testcase name="stressTest" classname="FAAQueueTest" time="68.655"/>
+  <testcase name="modelCheckingTest" classname="FAAQueueTest" time="0.185">
+    <failure message="java.lang.ExceptionInInitializerError" type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
+	at java.base/java.lang.J9VMInternals.ensureError(J9VMInternals.java:185)
+	at java.base/java.lang.J9VMInternals.recordInitializationFailure(J9VMInternals.java:174)
+	at Segment.&lt;init&gt;(FAAQueue.kt:88)
+	at FAAQueue.&lt;init&gt;(FAAQueue.kt:12)
+	at FAAQueueTest.&lt;init&gt;(FAAQueueTest.kt:10)
+	at java.base/java.lang.J9VMInternals.newInstanceImpl(Native Method)
+	at java.base/java.lang.Class.newInstance(Class.java:2256)
+	at org.jetbrains.kotlinx.lincheck.runner.ParallelThreadsRunner.reset(ParallelThreadsRunner.kt:146)
+	at org.jetbrains.kotlinx.lincheck.runner.ParallelThreadsRunner.run(ParallelThreadsRunner.kt:248)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.ManagedStrategy.runInvocation(ManagedStrategy.kt:241)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.modelchecking.ModelCheckingStrategy.runImpl(ModelCheckingStrategy.kt:74)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.ManagedStrategy.run(ManagedStrategy.kt:136)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.run(LinChecker.kt:145)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.checkImpl(LinChecker.kt:79)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.checkImpl$lincheck(LinChecker.kt:59)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.check(LinChecker.kt:49)
+	at org.jetbrains.kotlinx.lincheck.LinChecker$Companion.check(LinChecker.kt:210)
+	at org.jetbrains.kotlinx.lincheck.LinCheckerKt.check(LinChecker.kt:223)
+	at FAAQueueTest.modelCheckingTest(FAAQueueTest.kt:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:853)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: It seems that you use Java 9+ and the code uses Unsafe or similar constructions that are not accessible from unnamed modules.
+Please add the following lines to your test running configuration:
+--add-opens java.base/jdk.internal.misc=ALL-UNNAMED
+--add-exports java.base/jdk.internal.util=ALL-UNNAMED
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.UnsafeHolder.getUnsafe(ManagedStrategyTransformer.kt:1501)
+	at org.jetbrains.kotlinx.lincheck.tran$f*rmed.java.util.concurrent.atomic.AtomicInteger.&lt;clinit&gt;(AtomicInteger.java:62)
+	... 64 more
+Caused by: java.lang.RuntimeException: It seems that you use Java 9+ and the code uses Unsafe or similar constructions that are not accessible from unnamed modules.
+Please add the following lines to your test running configuration:
+--add-opens java.base/jdk.internal.misc=ALL-UNNAMED
+--add-exports java.base/jdk.internal.util=ALL-UNNAMED
+	at org.jetbrains.kotlinx.lincheck.UtilsKt.wrapInvalidAccessFromUnnamedModuleExceptionWithDescription(Utils.kt:323)
+	... 66 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private static final jdk.internal.misc.Unsafe jdk.internal.misc.Unsafe.theUnsafe accessible: module java.base does not &quot;opens jdk.internal.misc&quot; to unnamed module @3fd51d9
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:301)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.UnsafeHolder.getUnsafe(ManagedStrategyTransformer.kt:1498)
+	... 65 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+= Iteration 1 / 100 =
+Execution scenario (init part):
+[enqueue(2), enqueue(6)]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(-6) | enqueue(-8) |
+| dequeue()  | enqueue(1)  | dequeue()   |
+| enqueue(4) | enqueue(-8) | dequeue()   |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 2 / 100 =
+Execution scenario (init part):
+[enqueue(5), enqueue(-4)]
+Execution scenario (parallel part):
+| enqueue(-8) | enqueue(-2) | dequeue() |
+| enqueue(-8) | dequeue()   | dequeue() |
+| dequeue()   | dequeue()   | dequeue() |
+Execution scenario (post part):
+[dequeue(), enqueue(4)]
+
+= Iteration 3 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(6) | dequeue() | enqueue(1) |
+| enqueue(4) | dequeue() | dequeue()  |
+| enqueue(0) | dequeue() | dequeue()  |
+Execution scenario (post part):
+[dequeue(), enqueue(-10)]
+
+= Iteration 4 / 100 =
+Execution scenario (init part):
+[enqueue(10), enqueue(4)]
+Execution scenario (parallel part):
+| enqueue(-9) | dequeue()   | enqueue(-7) |
+| enqueue(7)  | enqueue(1)  | enqueue(-8) |
+| enqueue(6)  | enqueue(-4) | dequeue()   |
+Execution scenario (post part):
+[enqueue(9), dequeue()]
+
+= Iteration 5 / 100 =
+Execution scenario (init part):
+[enqueue(-1), enqueue(10)]
+Execution scenario (parallel part):
+| enqueue(4)  | enqueue(7) | dequeue()  |
+| enqueue(-8) | dequeue()  | dequeue()  |
+| enqueue(4)  | dequeue()  | enqueue(1) |
+Execution scenario (post part):
+[enqueue(7), enqueue(-7)]
+
+= Iteration 6 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()  | dequeue()  | dequeue()  |
+| dequeue()  | enqueue(4) | dequeue()  |
+| enqueue(0) | dequeue()  | enqueue(5) |
+Execution scenario (post part):
+[dequeue(), enqueue(4)]
+
+= Iteration 7 / 100 =
+Execution scenario (init part):
+[enqueue(9), enqueue(7)]
+Execution scenario (parallel part):
+| enqueue(4) | enqueue(3)  | enqueue(5) |
+| enqueue(9) | enqueue(-3) | dequeue()  |
+| dequeue()  | dequeue()   | dequeue()  |
+Execution scenario (post part):
+[dequeue(), enqueue(3)]
+
+= Iteration 8 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(-10) | dequeue()   |
+| enqueue(-3) | enqueue(-4)  | enqueue(10) |
+| enqueue(2)  | dequeue()    | dequeue()   |
+Execution scenario (post part):
+[enqueue(8), dequeue()]
+
+= Iteration 9 / 100 =
+Execution scenario (init part):
+[enqueue(0), enqueue(0)]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(1) | dequeue()  |
+| enqueue(-1) | enqueue(6) | dequeue()  |
+| enqueue(4)  | enqueue(9) | enqueue(3) |
+Execution scenario (post part):
+[dequeue(), enqueue(-4)]
+
+= Iteration 10 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(2) | dequeue()   |
+| enqueue(-4) | enqueue(3) | enqueue(-5) |
+| dequeue()   | enqueue(0) | enqueue(-7) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 11 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(7)  | dequeue()  | enqueue(-3) |
+| enqueue(10) | enqueue(7) | enqueue(-8) |
+| enqueue(-4) | enqueue(1) | dequeue()   |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 12 / 100 =
+Execution scenario (init part):
+[enqueue(-7), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | dequeue()  | dequeue()   |
+| dequeue() | dequeue()  | enqueue(-3) |
+| dequeue() | enqueue(0) | dequeue()   |
+Execution scenario (post part):
+[enqueue(9), enqueue(-4)]
+
+= Iteration 13 / 100 =
+Execution scenario (init part):
+[enqueue(-1), enqueue(-9)]
+Execution scenario (parallel part):
+| dequeue()  | dequeue()  | dequeue()  |
+| enqueue(2) | enqueue(8) | enqueue(6) |
+| dequeue()  | dequeue()  | dequeue()  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 14 / 100 =
+Execution scenario (init part):
+[enqueue(-3), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-4) | enqueue(-6) | enqueue(-7) |
+| dequeue()   | enqueue(3)  | dequeue()   |
+| enqueue(-4) | enqueue(-1) | dequeue()   |
+Execution scenario (post part):
+[enqueue(4), dequeue()]
+
+= Iteration 15 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(-3)]
+Execution scenario (parallel part):
+| enqueue(-4) | enqueue(-7) | enqueue(-4) |
+| enqueue(-1) | enqueue(-2) | dequeue()   |
+| dequeue()   | enqueue(-1) | enqueue(10) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 16 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(7)]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(-4) | dequeue() |
+| dequeue()  | dequeue()   | dequeue() |
+| enqueue(0) | enqueue(-4) | dequeue() |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 17 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(8)]
+Execution scenario (parallel part):
+| enqueue(-1) | enqueue(0) | enqueue(-6) |
+| enqueue(1)  | enqueue(3) | dequeue()   |
+| dequeue()   | enqueue(9) | dequeue()   |
+Execution scenario (post part):
+[dequeue(), enqueue(6)]
+
+= Iteration 18 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(6)  | dequeue() | enqueue(5)  |
+| dequeue()   | dequeue() | enqueue(-9) |
+| enqueue(-4) | dequeue() | dequeue()   |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 19 / 100 =
+Execution scenario (init part):
+[enqueue(-10), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(-10) | dequeue()   |
+| dequeue()   | enqueue(-8)  | dequeue()   |
+| enqueue(-5) | enqueue(0)   | enqueue(-3) |
+Execution scenario (post part):
+[enqueue(-2), enqueue(-6)]
+
+= Iteration 20 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(1)]
+Execution scenario (parallel part):
+| dequeue()  | dequeue()   | enqueue(3)  |
+| enqueue(8) | enqueue(-1) | enqueue(-5) |
+| dequeue()  | enqueue(2)  | dequeue()   |
+Execution scenario (post part):
+[dequeue(), enqueue(7)]
+
+= Iteration 21 / 100 =
+Execution scenario (init part):
+[enqueue(-6), enqueue(0)]
+Execution scenario (parallel part):
+| enqueue(10) | dequeue()   | enqueue(7) |
+| enqueue(-9) | enqueue(-4) | dequeue()  |
+| enqueue(3)  | dequeue()   | dequeue()  |
+Execution scenario (post part):
+[enqueue(-5), enqueue(1)]
+
+= Iteration 22 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue() | enqueue(4)  |
+| enqueue(-6) | dequeue() | enqueue(6)  |
+| enqueue(-1) | dequeue() | enqueue(-8) |
+Execution scenario (post part):
+[enqueue(7), dequeue()]
+
+= Iteration 23 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(-5)]
+Execution scenario (parallel part):
+| dequeue()   | dequeue() | enqueue(3)  |
+| enqueue(-6) | dequeue() | enqueue(10) |
+| enqueue(10) | dequeue() | enqueue(-5) |
+Execution scenario (post part):
+[dequeue(), enqueue(-10)]
+
+= Iteration 24 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(9) | dequeue() | enqueue(-2) |
+| dequeue()  | dequeue() | enqueue(4)  |
+| dequeue()  | dequeue() | dequeue()   |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 25 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | dequeue()   | enqueue(5)  |
+| dequeue() | dequeue()   | enqueue(1)  |
+| dequeue() | enqueue(-4) | enqueue(-1) |
+Execution scenario (post part):
+[enqueue(1), enqueue(1)]
+
+= Iteration 26 / 100 =
+Execution scenario (init part):
+[enqueue(-8), dequeue()]
+Execution scenario (parallel part):
+| enqueue(10) | enqueue(3)  | enqueue(10) |
+| dequeue()   | dequeue()   | dequeue()   |
+| enqueue(3)  | enqueue(-1) | enqueue(0)  |
+Execution scenario (post part):
+[dequeue(), enqueue(-5)]
+
+= Iteration 27 / 100 =
+Execution scenario (init part):
+[enqueue(5), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-6) | dequeue() | enqueue(-6) |
+| enqueue(8)  | dequeue() | dequeue()   |
+| enqueue(-9) | dequeue() | enqueue(2)  |
+Execution scenario (post part):
+[enqueue(6), dequeue()]
+
+= Iteration 28 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(-8)]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()  | enqueue(-1) |
+| dequeue()   | enqueue(0) | enqueue(1)  |
+| enqueue(-3) | dequeue()  | enqueue(7)  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 29 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(9)]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(7) | enqueue(1) |
+| enqueue(-6) | enqueue(2) | enqueue(9) |
+| dequeue()   | dequeue()  | enqueue(9) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 30 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()   | dequeue()   |
+| enqueue(-2) | enqueue(-9) | dequeue()   |
+| dequeue()   | enqueue(-8) | enqueue(-5) |
+Execution scenario (post part):
+[enqueue(-9), enqueue(-1)]
+
+= Iteration 31 / 100 =
+Execution scenario (init part):
+[enqueue(-9), dequeue()]
+Execution scenario (parallel part):
+| dequeue()    | dequeue()   | dequeue()  |
+| enqueue(3)   | dequeue()   | enqueue(1) |
+| enqueue(-10) | enqueue(-2) | dequeue()  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 32 / 100 =
+Execution scenario (init part):
+[enqueue(-7), enqueue(-4)]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(-8) | dequeue() |
+| enqueue(0) | dequeue()   | dequeue() |
+| dequeue()  | dequeue()   | dequeue() |
+Execution scenario (post part):
+[enqueue(7), enqueue(6)]
+
+= Iteration 33 / 100 =
+Execution scenario (init part):
+[enqueue(-7), dequeue()]
+Execution scenario (parallel part):
+| dequeue()    | enqueue(4) | dequeue()   |
+| dequeue()    | dequeue()  | dequeue()   |
+| enqueue(-10) | enqueue(5) | enqueue(-1) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 34 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(-8) | dequeue()   |
+| enqueue(8)  | enqueue(0)  | enqueue(-9) |
+| enqueue(10) | enqueue(3)  | dequeue()   |
+Execution scenario (post part):
+[dequeue(), enqueue(-5)]
+
+= Iteration 35 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(-9)]
+Execution scenario (parallel part):
+| enqueue(-9) | enqueue(1)  | enqueue(-7) |
+| dequeue()   | dequeue()   | enqueue(-6) |
+| enqueue(2)  | enqueue(-3) | enqueue(1)  |
+Execution scenario (post part):
+[enqueue(4), enqueue(0)]
+
+= Iteration 36 / 100 =
+Execution scenario (init part):
+[enqueue(8), enqueue(-7)]
+Execution scenario (parallel part):
+| enqueue(-10) | dequeue()   | enqueue(4) |
+| dequeue()    | enqueue(-1) | dequeue()  |
+| dequeue()    | enqueue(-1) | enqueue(1) |
+Execution scenario (post part):
+[enqueue(-1), dequeue()]
+
+= Iteration 37 / 100 =
+Execution scenario (init part):
+[enqueue(9), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | enqueue(-8) | enqueue(1)  |
+| dequeue() | enqueue(-5) | enqueue(-4) |
+| dequeue() | dequeue()   | dequeue()   |
+Execution scenario (post part):
+[enqueue(-1), enqueue(6)]
+
+= Iteration 38 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | dequeue()   | dequeue()   |
+| dequeue() | enqueue(10) | dequeue()   |
+| dequeue() | dequeue()   | enqueue(10) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 39 / 100 =
+Execution scenario (init part):
+[enqueue(-2), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()   | dequeue()  |
+| enqueue(9)  | dequeue()   | enqueue(5) |
+| enqueue(-2) | enqueue(-8) | dequeue()  |
+Execution scenario (post part):
+[enqueue(-5), dequeue()]
+
+= Iteration 40 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(1)]
+Execution scenario (parallel part):
+| enqueue(6) | enqueue(3)  | dequeue()  |
+| dequeue()  | dequeue()   | enqueue(9) |
+| dequeue()  | enqueue(-7) | dequeue()  |
+Execution scenario (post part):
+[enqueue(-10), dequeue()]
+
+= Iteration 41 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(-1)  | enqueue(3) |
+| enqueue(5) | dequeue()    | dequeue()  |
+| dequeue()  | enqueue(-10) | enqueue(6) |
+Execution scenario (post part):
+[enqueue(-3), dequeue()]
+
+= Iteration 42 / 100 =
+Execution scenario (init part):
+[enqueue(8), enqueue(5)]
+Execution scenario (parallel part):
+| enqueue(-10) | dequeue() | dequeue()  |
+| dequeue()    | dequeue() | dequeue()  |
+| dequeue()    | dequeue() | enqueue(0) |
+Execution scenario (post part):
+[dequeue(), enqueue(10)]
+
+= Iteration 43 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(1)]
+Execution scenario (parallel part):
+| enqueue(1)   | enqueue(-3) | enqueue(-5) |
+| enqueue(-9)  | dequeue()   | enqueue(1)  |
+| enqueue(-10) | dequeue()   | dequeue()   |
+Execution scenario (post part):
+[enqueue(-3), dequeue()]
+
+= Iteration 44 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(8)]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(-1) | dequeue() |
+| dequeue()  | enqueue(-3) | dequeue() |
+| enqueue(9) | enqueue(-4) | dequeue() |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 45 / 100 =
+Execution scenario (init part):
+[enqueue(6), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-5) | enqueue(9)  | dequeue()  |
+| enqueue(-8) | enqueue(2)  | dequeue()  |
+| enqueue(-1) | enqueue(-2) | enqueue(2) |
+Execution scenario (post part):
+[enqueue(5), dequeue()]
+
+= Iteration 46 / 100 =
+Execution scenario (init part):
+[enqueue(-6), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | dequeue()  | dequeue()  |
+| dequeue() | enqueue(4) | dequeue()  |
+| dequeue() | dequeue()  | enqueue(5) |
+Execution scenario (post part):
+[dequeue(), enqueue(9)]
+
+= Iteration 47 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(9)]
+Execution scenario (parallel part):
+| enqueue(-3) | enqueue(-6) | enqueue(-7) |
+| dequeue()   | dequeue()   | enqueue(7)  |
+| enqueue(-5) | dequeue()   | dequeue()   |
+Execution scenario (post part):
+[enqueue(10), enqueue(3)]
+
+= Iteration 48 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-4) | enqueue(-6) | dequeue() |
+| dequeue()   | dequeue()   | dequeue() |
+| enqueue(-7) | enqueue(8)  | dequeue() |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 49 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(8) | enqueue(3)  |
+| enqueue(1) | dequeue()  | enqueue(-4) |
+| enqueue(7) | dequeue()  | enqueue(-1) |
+Execution scenario (post part):
+[enqueue(-8), enqueue(-10)]
+
+= Iteration 50 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()  | enqueue(2) |
+| dequeue()   | dequeue()  | dequeue()  |
+| enqueue(-8) | enqueue(0) | dequeue()  |
+Execution scenario (post part):
+[enqueue(0), enqueue(6)]
+
+= Iteration 51 / 100 =
+Execution scenario (init part):
+[enqueue(-9), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-5) | enqueue(1)  | dequeue() |
+| dequeue()   | dequeue()   | dequeue() |
+| enqueue(2)  | enqueue(-3) | dequeue() |
+Execution scenario (post part):
+[enqueue(-10), dequeue()]
+
+= Iteration 52 / 100 =
+Execution scenario (init part):
+[enqueue(0), enqueue(9)]
+Execution scenario (parallel part):
+| dequeue() | enqueue(-4) | enqueue(-4) |
+| dequeue() | enqueue(10) | dequeue()   |
+| dequeue() | dequeue()   | enqueue(2)  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 53 / 100 =
+Execution scenario (init part):
+[enqueue(-7), enqueue(2)]
+Execution scenario (parallel part):
+| enqueue(3)  | dequeue() | dequeue()  |
+| dequeue()   | dequeue() | enqueue(2) |
+| enqueue(-7) | dequeue() | dequeue()  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 54 / 100 =
+Execution scenario (init part):
+[enqueue(9), enqueue(3)]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()  | enqueue(9) |
+| enqueue(-5) | dequeue()  | dequeue()  |
+| enqueue(-5) | enqueue(2) | enqueue(5) |
+Execution scenario (post part):
+[enqueue(5), dequeue()]
+
+= Iteration 55 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(2)]
+Execution scenario (parallel part):
+| dequeue() | dequeue()   | enqueue(-8) |
+| dequeue() | dequeue()   | enqueue(7)  |
+| dequeue() | enqueue(-9) | dequeue()   |
+Execution scenario (post part):
+[enqueue(-7), enqueue(2)]
+
+= Iteration 56 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(2)  | dequeue()  |
+| dequeue()   | enqueue(-1) | enqueue(0) |
+| enqueue(-6) | enqueue(-2) | dequeue()  |
+Execution scenario (post part):
+[enqueue(-3), enqueue(-1)]
+
+= Iteration 57 / 100 =
+Execution scenario (init part):
+[enqueue(-7), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | dequeue() | dequeue()  |
+| dequeue() | dequeue() | dequeue()  |
+| dequeue() | dequeue() | enqueue(9) |
+Execution scenario (post part):
+[enqueue(-1), enqueue(3)]
+
+= Iteration 58 / 100 =
+Execution scenario (init part):
+[enqueue(-3), enqueue(2)]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(-1) | dequeue()   |
+| enqueue(-3) | dequeue()   | enqueue(-2) |
+| enqueue(-1) | dequeue()   | dequeue()   |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 59 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(3)  | enqueue(5) | enqueue(8) |
+| enqueue(0)  | dequeue()  | dequeue()  |
+| enqueue(-1) | dequeue()  | dequeue()  |
+Execution scenario (post part):
+[enqueue(7), dequeue()]
+
+= Iteration 60 / 100 =
+Execution scenario (init part):
+[enqueue(-3), enqueue(1)]
+Execution scenario (parallel part):
+| enqueue(-5) | enqueue(8)  | dequeue()  |
+| dequeue()   | enqueue(-4) | dequeue()  |
+| enqueue(5)  | enqueue(6)  | enqueue(8) |
+Execution scenario (post part):
+[enqueue(1), enqueue(-7)]
+
+= Iteration 61 / 100 =
+Execution scenario (init part):
+[enqueue(6), enqueue(-4)]
+Execution scenario (parallel part):
+| dequeue() | enqueue(-9) | dequeue()   |
+| dequeue() | enqueue(2)  | enqueue(-3) |
+| dequeue() | dequeue()   | enqueue(-1) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 62 / 100 =
+Execution scenario (init part):
+[enqueue(0), enqueue(7)]
+Execution scenario (parallel part):
+| enqueue(10)  | dequeue()   | enqueue(5) |
+| enqueue(-10) | enqueue(3)  | enqueue(7) |
+| enqueue(9)   | enqueue(-4) | dequeue()  |
+Execution scenario (post part):
+[enqueue(6), dequeue()]
+
+= Iteration 63 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-3) | enqueue(9)  | dequeue() |
+| dequeue()   | enqueue(-7) | dequeue() |
+| enqueue(-2) | dequeue()   | dequeue() |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 64 / 100 =
+Execution scenario (init part):
+[enqueue(-5), enqueue(5)]
+Execution scenario (parallel part):
+| dequeue() | enqueue(-10) | enqueue(-4) |
+| dequeue() | enqueue(-6)  | enqueue(-3) |
+| dequeue() | dequeue()    | enqueue(-6) |
+Execution scenario (post part):
+[dequeue(), enqueue(-10)]
+
+= Iteration 65 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(5)]
+Execution scenario (parallel part):
+| enqueue(0)  | dequeue()   | enqueue(5) |
+| enqueue(1)  | dequeue()   | dequeue()  |
+| enqueue(10) | enqueue(10) | dequeue()  |
+Execution scenario (post part):
+[enqueue(-1), enqueue(-4)]
+
+= Iteration 66 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()  | enqueue(8) |
+| enqueue(6)  | dequeue()  | enqueue(1) |
+| enqueue(-4) | enqueue(4) | dequeue()  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 67 / 100 =
+Execution scenario (init part):
+[enqueue(-7), enqueue(-4)]
+Execution scenario (parallel part):
+| enqueue(-9) | enqueue(7) | dequeue() |
+| dequeue()   | dequeue()  | dequeue() |
+| enqueue(0)  | dequeue()  | dequeue() |
+Execution scenario (post part):
+[enqueue(2), dequeue()]
+
+= Iteration 68 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(10)]
+Execution scenario (parallel part):
+| dequeue()  | dequeue() | dequeue() |
+| dequeue()  | dequeue() | dequeue() |
+| enqueue(0) | dequeue() | dequeue() |
+Execution scenario (post part):
+[dequeue(), enqueue(-1)]
+
+= Iteration 69 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(7)]
+Execution scenario (parallel part):
+| dequeue()  | dequeue()  | enqueue(-7) |
+| dequeue()  | dequeue()  | dequeue()   |
+| enqueue(8) | enqueue(3) | enqueue(10) |
+Execution scenario (post part):
+[enqueue(7), enqueue(6)]
+
+= Iteration 70 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(3)]
+Execution scenario (parallel part):
+| enqueue(9) | dequeue()  | dequeue()  |
+| dequeue()  | enqueue(5) | dequeue()  |
+| enqueue(3) | enqueue(1) | enqueue(8) |
+Execution scenario (post part):
+[dequeue(), enqueue(-9)]
+
+= Iteration 71 / 100 =
+Execution scenario (init part):
+[enqueue(-5), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | enqueue(-4) | dequeue()   |
+| dequeue() | enqueue(6)  | enqueue(6)  |
+| dequeue() | dequeue()   | enqueue(-9) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 72 / 100 =
+Execution scenario (init part):
+[enqueue(-9), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | enqueue(2)  | dequeue()   |
+| dequeue() | enqueue(-8) | dequeue()   |
+| dequeue() | enqueue(6)  | enqueue(-8) |
+Execution scenario (post part):
+[enqueue(-8), dequeue()]
+
+= Iteration 73 / 100 =
+Execution scenario (init part):
+[enqueue(-7), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()   | dequeue()    |
+| dequeue()   | enqueue(-9) | enqueue(-10) |
+| enqueue(10) | dequeue()   | dequeue()    |
+Execution scenario (post part):
+[dequeue(), enqueue(7)]
+
+= Iteration 74 / 100 =
+Execution scenario (init part):
+[enqueue(-6), dequeue()]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(3)  | enqueue(-2) |
+| dequeue()  | enqueue(5)  | enqueue(8)  |
+| enqueue(8) | enqueue(-4) | enqueue(4)  |
+Execution scenario (post part):
+[dequeue(), enqueue(-7)]
+
+= Iteration 75 / 100 =
+Execution scenario (init part):
+[enqueue(-4), enqueue(-3)]
+Execution scenario (parallel part):
+| enqueue(2)  | enqueue(8) | enqueue(4) |
+| enqueue(-7) | dequeue()  | dequeue()  |
+| enqueue(-3) | dequeue()  | dequeue()  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 76 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()   | dequeue() |
+| enqueue(-4) | enqueue(-1) | dequeue() |
+| enqueue(8)  | enqueue(4)  | dequeue() |
+Execution scenario (post part):
+[dequeue(), enqueue(-1)]
+
+= Iteration 77 / 100 =
+Execution scenario (init part):
+[enqueue(4), dequeue()]
+Execution scenario (parallel part):
+| dequeue()  | dequeue()  | dequeue()  |
+| dequeue()  | dequeue()  | enqueue(3) |
+| enqueue(5) | enqueue(8) | dequeue()  |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 78 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(7)]
+Execution scenario (parallel part):
+| dequeue()    | dequeue()   | dequeue()  |
+| enqueue(-10) | enqueue(-6) | enqueue(8) |
+| enqueue(-7)  | enqueue(10) | dequeue()  |
+Execution scenario (post part):
+[dequeue(), enqueue(-3)]
+
+= Iteration 79 / 100 =
+Execution scenario (init part):
+[enqueue(1), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-9) | dequeue()  | enqueue(1)  |
+| enqueue(7)  | enqueue(3) | dequeue()   |
+| enqueue(3)  | dequeue()  | enqueue(-3) |
+Execution scenario (post part):
+[dequeue(), enqueue(9)]
+
+= Iteration 80 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()    | dequeue()  | dequeue()   |
+| enqueue(-10) | enqueue(8) | dequeue()   |
+| dequeue()    | dequeue()  | enqueue(-9) |
+Execution scenario (post part):
+[dequeue(), enqueue(-5)]
+
+= Iteration 81 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(9)  | enqueue(10) | dequeue()    |
+| dequeue()   | enqueue(-8) | enqueue(-10) |
+| enqueue(-5) | dequeue()   | dequeue()    |
+Execution scenario (post part):
+[enqueue(-8), dequeue()]
+
+= Iteration 82 / 100 =
+Execution scenario (init part):
+[enqueue(4), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()   | dequeue()  |
+| enqueue(-8) | enqueue(-6) | enqueue(6) |
+| enqueue(-4) | enqueue(2)  | dequeue()  |
+Execution scenario (post part):
+[enqueue(-7), enqueue(10)]
+
+= Iteration 83 / 100 =
+Execution scenario (init part):
+[enqueue(-3), enqueue(9)]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(5) | enqueue(2) |
+| dequeue()  | dequeue()  | dequeue()  |
+| enqueue(6) | dequeue()  | dequeue()  |
+Execution scenario (post part):
+[enqueue(8), dequeue()]
+
+= Iteration 84 / 100 =
+Execution scenario (init part):
+[enqueue(6), dequeue()]
+Execution scenario (parallel part):
+| dequeue() | dequeue()   | dequeue()   |
+| dequeue() | enqueue(-9) | dequeue()   |
+| dequeue() | dequeue()   | enqueue(-3) |
+Execution scenario (post part):
+[dequeue(), enqueue(-4)]
+
+= Iteration 85 / 100 =
+Execution scenario (init part):
+[enqueue(0), enqueue(8)]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(-8) | dequeue()   |
+| enqueue(10) | enqueue(-7) | dequeue()   |
+| dequeue()   | enqueue(3)  | enqueue(-4) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 86 / 100 =
+Execution scenario (init part):
+[enqueue(3), enqueue(5)]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(-8) | dequeue() |
+| dequeue()   | dequeue()   | dequeue() |
+| enqueue(-4) | enqueue(-5) | dequeue() |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 87 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(2)]
+Execution scenario (parallel part):
+| dequeue()   | dequeue() | enqueue(3)  |
+| enqueue(-3) | dequeue() | dequeue()   |
+| enqueue(-7) | dequeue() | enqueue(-8) |
+Execution scenario (post part):
+[enqueue(-10), enqueue(-3)]
+
+= Iteration 88 / 100 =
+Execution scenario (init part):
+[enqueue(6), dequeue()]
+Execution scenario (parallel part):
+| enqueue(2) | dequeue()   | dequeue() |
+| dequeue()  | dequeue()   | dequeue() |
+| dequeue()  | enqueue(-9) | dequeue() |
+Execution scenario (post part):
+[enqueue(-1), enqueue(-8)]
+
+= Iteration 89 / 100 =
+Execution scenario (init part):
+[enqueue(2), dequeue()]
+Execution scenario (parallel part):
+| enqueue(-5) | enqueue(-9) | enqueue(7)  |
+| dequeue()   | enqueue(-1) | enqueue(-4) |
+| dequeue()   | enqueue(5)  | enqueue(-6) |
+Execution scenario (post part):
+[enqueue(-7), enqueue(2)]
+
+= Iteration 90 / 100 =
+Execution scenario (init part):
+[enqueue(2), enqueue(-1)]
+Execution scenario (parallel part):
+| enqueue(1) | dequeue()  | enqueue(-7) |
+| dequeue()  | dequeue()  | dequeue()   |
+| dequeue()  | enqueue(8) | enqueue(-5) |
+Execution scenario (post part):
+[dequeue(), dequeue()]
+
+= Iteration 91 / 100 =
+Execution scenario (init part):
+[enqueue(3), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(8) | dequeue()  |
+| enqueue(4)  | enqueue(4) | dequeue()  |
+| enqueue(-2) | dequeue()  | enqueue(2) |
+Execution scenario (post part):
+[enqueue(-9), dequeue()]
+
+= Iteration 92 / 100 =
+Execution scenario (init part):
+[enqueue(-8), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | dequeue()  | dequeue()   |
+| dequeue()   | enqueue(4) | enqueue(-7) |
+| enqueue(-3) | enqueue(7) | enqueue(3)  |
+Execution scenario (post part):
+[enqueue(-5), dequeue()]
+
+= Iteration 93 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(2)]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(2) | dequeue()  |
+| dequeue()   | dequeue()  | enqueue(8) |
+| enqueue(-5) | dequeue()  | dequeue()  |
+Execution scenario (post part):
+[enqueue(4), enqueue(2)]
+
+= Iteration 94 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(10)]
+Execution scenario (parallel part):
+| enqueue(-4) | dequeue()   | dequeue() |
+| dequeue()   | enqueue(-2) | dequeue() |
+| dequeue()   | enqueue(-7) | dequeue() |
+Execution scenario (post part):
+[dequeue(), enqueue(1)]
+
+= Iteration 95 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| enqueue(1) | dequeue() | enqueue(2) |
+| enqueue(0) | dequeue() | dequeue()  |
+| enqueue(1) | dequeue() | dequeue()  |
+Execution scenario (post part):
+[enqueue(-9), dequeue()]
+
+= Iteration 96 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(4)]
+Execution scenario (parallel part):
+| dequeue() | dequeue()   | enqueue(-4) |
+| dequeue() | enqueue(-8) | dequeue()   |
+| dequeue() | dequeue()   | enqueue(3)  |
+Execution scenario (post part):
+[enqueue(7), dequeue()]
+
+= Iteration 97 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(0)]
+Execution scenario (parallel part):
+| enqueue(-5)  | dequeue()   | dequeue() |
+| enqueue(-10) | enqueue(-3) | dequeue() |
+| enqueue(7)   | dequeue()   | dequeue() |
+Execution scenario (post part):
+[enqueue(-10), enqueue(-9)]
+
+= Iteration 98 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()   | enqueue(0) | enqueue(-1)  |
+| enqueue(10) | dequeue()  | dequeue()    |
+| enqueue(3)  | enqueue(3) | enqueue(-10) |
+Execution scenario (post part):
+[enqueue(9), dequeue()]
+
+= Iteration 99 / 100 =
+Execution scenario (init part):
+[dequeue(), enqueue(8)]
+Execution scenario (parallel part):
+| enqueue(-2) | dequeue()  | dequeue() |
+| enqueue(-2) | enqueue(8) | dequeue() |
+| enqueue(-6) | enqueue(3) | dequeue() |
+Execution scenario (post part):
+[dequeue(), enqueue(10)]
+
+= Iteration 100 / 100 =
+Execution scenario (init part):
+[dequeue(), dequeue()]
+Execution scenario (parallel part):
+| dequeue()    | enqueue(5) | dequeue() |
+| enqueue(-10) | enqueue(7) | dequeue() |
+| dequeue()    | dequeue()  | dequeue() |
+Execution scenario (post part):
+[enqueue(-3), dequeue()]
+
+= Iteration 1 / 100 =
+Execution scenario (init part):
+[enqueue(2), enqueue(6), dequeue(), enqueue(-6), enqueue(-8)]
+Execution scenario (parallel part):
+| dequeue()  | enqueue(1)  | dequeue()  |
+| enqueue(4) | enqueue(-8) | dequeue()  |
+| dequeue()  | dequeue()   | enqueue(5) |
+Execution scenario (post part):
+[enqueue(-4), enqueue(-8), enqueue(-2), dequeue(), enqueue(-8)]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,1 @@
+JMH S 20 stack.StackBenchmark S 44 stack.generated.StackBenchmark_stack_jmhTest S 5 stack S 11 AverageTime E A 2 1 1 1 1 L 2 3 pop 4 push I 1 5 T 3 1 s E I 2 10 T 3 1 s E I 1 1 E E E E E M 1 4 work 4 1 1 2 10 2 50 3 100 U 11 NANOSECONDS E E 
