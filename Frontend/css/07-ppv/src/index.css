@@ -1,0 +1,236 @@
+html {
+  font-size: 12px;
+  font-family: 'Helvetica', serif;
+}
+
+.body {
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+
+  height: calc(100vh - 56px);
+
+  padding: 20px;
+}
+
+.city {
+  grid-column: 1;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  opacity: .6;
+}
+
+.news {
+  grid-column-start: 6;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.header {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.main {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: royalblue;
+}
+
+.secondary {
+  font-weight: 600;
+  color: royalblue;
+  opacity: 0.8;
+}
+
+.addition {
+  display: inline-block;
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: .5;
+}
+
+.news__list {
+  padding: 0;
+}
+
+.rate {
+  font-weight: 900;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.settings {
+  grid-column: 17;
+  grid-row: 1;
+}
+
+.login {
+  grid-column-start: 18;
+  grid-column-end: 21;
+  grid-row: 1;
+
+  box-shadow: 0 0 1px black;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+}
+
+.logo {
+  font-weight: 900;
+}
+
+.logo::first-letter {
+  color: red;
+}
+
+.num {
+  font-weight: 900;
+}
+
+.search {
+  position: relative;
+
+  grid-column-start: 6;
+  grid-column-end: 18;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+.adv1 {
+  grid-column-start: 14;
+  grid-column-end: 16;
+
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.adv2 {
+  grid-column-start: 6;
+  grid-column-end: 17;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.category {
+  display: inline-block;
+  color: royalblue;
+  padding-right: 10px;
+}
+
+.logo-main {
+  position: absolute;
+  left: -150px;
+
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.logo-main::first-letter {
+  color: red;
+}
+
+.find-anything {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.widgets {
+  grid-column-start: 6;
+  grid-column-end: 17;
+  grid-row-start: 11;
+  grid-row-end: 21;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-column-gap: 30px;
+}
+
+.widget {
+  display: none;
+}
+
+.scroll {
+  width: 250px;
+  height: 150px;
+  overflow: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  width: 250px;
+  height: 150px;
+
+  z-index: 1;
+  background:
+    linear-gradient(white, transparent 30%),
+    linear-gradient(transparent 70%, white);
+
+  pointer-events: none;
+}
+
+.joke {
+  display: none;
+}
+
+.next {
+  color: royalblue;
+  display: none;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:checked ~ .j1,
+.c2:checked ~ .j2,
+.c3:checked ~ .j3,
+.c4:checked ~ .j4,
+.c5:checked ~ .j5,
+.c1:checked ~ .n2,
+.c2:checked ~ .n3,
+.c3:checked ~ .n4,
+.c4:checked ~ .n5 {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  background-color: white;
+
+  box-shadow: 0 0 1px grey;
+  padding: 10px;
+}
+
+.sett:checked ~ .menu {
+  display: block;
+}
+
+.w1:checked ~ .widgets .popular,
+.w2:checked ~ .widgets .jokes,
+.w3:checked ~ .widgets .tv,
+.w4:checked ~ .widgets .car-news,
+.w5:checked ~ .widgets .weather,
+.w6:checked ~ .widgets .jams,
+.w7:checked ~ .widgets .map,
+.w8:checked ~ .widgets .billboard {
+  display: block;
+}
+
+.car-news {
+  position: relative;
+}

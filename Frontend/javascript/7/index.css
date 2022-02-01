@@ -1,0 +1,47 @@
+body {
+    font-family: -apple-system, serif;
+}
+
+.header-title {
+    font-size: 36px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+section {
+    display: inline-block;
+}
+
+input {
+    width: 250px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 64px;
+    margin-left: 32px;
+}
+
+ul {
+    padding-left: 2px;
+    width: 250px;
+    border: 1px solid #d3d3d3;
+    margin-top: 0;
+    margin-left: 32px;
+    border-radius: 5px;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background: lightgrey;
+}
