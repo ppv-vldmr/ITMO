@@ -1,0 +1,16 @@
+def readint(): int extern
+def readbool(): bool extern
+def print(x: int): bool extern
+def print(x: bool): bool extern
+def printspace(): bool extern
+def println(): bool extern
+
+def main(): int {
+    let kek: [int]
+    kek = [1, 2, 3, 4, 5, 6, 7, 8]
+
+    let sum: int
+    sum = 0
+
+    print(sum)
+}

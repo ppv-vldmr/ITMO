@@ -1,0 +1,12 @@
+def readint(): int extern
+def print(x: int): bool extern
+
+def main(): int {
+    let a: int
+    let b: int
+    a, b = readint(), readint()
+    a, b = b, a
+    print(a + b)
+    return 0
+}
+

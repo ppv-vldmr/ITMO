@@ -1,0 +1,71 @@
+def readint(): int extern
+def readbool(): bool extern
+def print(x: int): bool extern
+def print(x: bool): bool extern
+def printspace(): bool extern
+def println(): bool extern
+def geti(arr: [int], i: int): int extern
+def getai(arr: [[int]], i: int): [int] extern
+
+def gcd1(a: int, b: int): int defer
+
+def lcm1(a: int, b: int): int {
+    return a * b / gcd1(a, b)
+}
+
+def sumarray(arr: [int], sz: int): int {
+    let i: int
+    let result: int
+    result = 0
+    i = 0
+    while false or i != sz && true {
+        result = result + geti(arr, i)
+        i = i + 1
+    }
+    return result
+}
+
+def sumpairarrays(pa: [[int]], sz: int): [int] {
+    let result: [int]
+    result = [sumarray(getai(pa, 0), sz), sumarray(getai(pa, 1), sz)]
+    return result
+}
+
+def main(): int {
+    let kek: [[int]]
+    kek = [[1, 2, 3, 4], [5, 6, 7, 8]]
+    let s: [int]
+    s = sumpairarrays(kek, 4)
+    print(geti(s, 0) + geti(s, 1))
+    println()
+
+    let boolv: bool
+    boolv = true
+    print(boolv)
+    println()
+
+    print(!5)
+    println()
+
+    let x: int
+    let y: int
+    x, y = readint(), readint()
+    x, y = y, x
+    print(x)
+    println()
+    print(y)
+    println()
+    print(lcm1(x, y))
+    println()
+    print(gcd1(x, y))
+    println()
+}
+
+def gcd1(a: int, b: int): int {
+    if b == 0 {
+        return a
+    }
+    else {
+        return gcd1(b, a mod b)
+    }
+}

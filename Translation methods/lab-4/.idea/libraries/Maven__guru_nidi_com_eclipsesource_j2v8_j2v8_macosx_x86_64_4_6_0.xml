@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: guru.nidi.com.eclipsesource.j2v8:j2v8_macosx_x86_64:4.6.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/guru/nidi/com/eclipsesource/j2v8/j2v8_macosx_x86_64/4.6.0/j2v8_macosx_x86_64-4.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/guru/nidi/com/eclipsesource/j2v8/j2v8_macosx_x86_64/4.6.0/j2v8_macosx_x86_64-4.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/guru/nidi/com/eclipsesource/j2v8/j2v8_macosx_x86_64/4.6.0/j2v8_macosx_x86_64-4.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
