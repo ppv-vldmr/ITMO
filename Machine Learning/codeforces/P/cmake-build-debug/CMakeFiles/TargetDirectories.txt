@@ -1,0 +1,3 @@
+/Users/vladimir/Desktop/machine-learning/P/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vladimir/Desktop/machine-learning/P/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vladimir/Desktop/machine-learning/P/cmake-build-debug/CMakeFiles/P.dir

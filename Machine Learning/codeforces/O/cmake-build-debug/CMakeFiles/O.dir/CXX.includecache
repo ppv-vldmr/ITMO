@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vladimir/Desktop/machine-learning/O/main.cpp
+iostream
+-
+map
+-
+unordered_map
+-
+utility
+-
+vector
+-
+set
+-
+unordered_set
+-
+queue
+-
+algorithm
+-
+numeric
+-
+functional
+-
+cmath
+-
+iomanip
+-
+random
+-
+
