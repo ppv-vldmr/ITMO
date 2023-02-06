@@ -1,0 +1,3 @@
+SolvedTask(TeamId, Letter, ContestId) :- Sessions(SessionId, TeamId, ContestId, _ ), Runs(_, SessionId, Letter, _, 1).
+NotSolvedTask(Letter, ContestId) :- Sessions(_, TeamId, ContestId, _), Problems(ContestId, Letter, _), not SolvedTask(TeamId, Letter, ContestId).
+Result(ProblemName) :- Problems(ContestId, Letter, ProblemName), not NotSolvedTask(Letter, ContestId).

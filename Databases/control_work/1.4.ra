@@ -1,0 +1,7 @@
+pi{TeamName}(
+    Teams except pi{TeamId, TeamName}(
+        sigma{Accepted = 1} (
+            Teams njoin Sessions njoin Runs
+        )
+    )
+)

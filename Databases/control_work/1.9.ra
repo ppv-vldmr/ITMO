@@ -1,0 +1,9 @@
+pi {TeamName} (
+  (
+      pi {TeamId, ContestId} (
+        (sigma{Accepted = 1} (Runs)) ⋈ Sessions
+      )
+      div
+      pi {ContestId} (Contests)
+    ) ⋈ Teams
+)

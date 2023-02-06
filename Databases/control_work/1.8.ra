@@ -1,0 +1,7 @@
+proj{SessionId}(Sessions)
+diff
+proj{SessionId}(
+  proj{SessionId, Letter}(Sessions nj Problems)
+  diff
+  proj{SessionId, Letter}(select{Accepted = 1}(Runs))
+)

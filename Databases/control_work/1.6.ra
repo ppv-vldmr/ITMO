@@ -1,0 +1,1 @@
+π{TeamName}(π{ContestId, TeamId, TeamName}(Sessions ⋈ Teams) ∖ π{ContestId, TeamId, TeamName}(σ{Accepted = 1}(Sessions ⋈ Runs ⋈ Teams)))

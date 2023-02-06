@@ -1,0 +1,12 @@
+pi{TeamName}(
+    pi{TeamId, TeamName, ContestId}(
+        Teams 
+        cjoin Contests
+    ) except pi{TeamId, TeamName, ContestId}(
+        sigma {Accepted = 1} (
+            Teams
+            njoin Sessions
+            njoin Runs
+        )
+    )
+)
