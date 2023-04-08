@@ -1,0 +1,138 @@
+.column-name {
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.column {
+    width: 33%;
+    padding: 8px;
+}
+
+.column + .column {
+    border-left: solid 1px black;
+}
+
+.footer {
+    width: max-content;
+    margin: 20px auto 0;
+}
+
+.task {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.task-lists {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px darkblue;
+    width: 15%;
+    padding: 8px;
+}
+
+.board-wrapper {
+    width: 85%;
+}
+
+.date, .status {
+    text-align: right;
+}
+
+.centered-title-wrapper {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-wrapper {
+    position: relative;
+}
+
+.title {
+    display: inline-block;
+}
+
+.icon-actions {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.task-action {
+    float: right;
+}
+
+.icon-input {
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+}
+
+.list-link {
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+.list-link-0 {
+    background-color: indianred;
+}
+
+.list-link-1 {
+    background-color: darkolivegreen;
+}
+
+.list-link-2 {
+    background-color: darkgoldenrod;
+}
+
+.list-link-3 {
+    background-color: cornflowerblue;
+}
+
+.list-link-4 {
+    background-color: mediumpurple;
+}
+
+.list-link-5 {
+    background-color: saddlebrown;
+}
+
+.task-list-item {
+    display: block;
+    margin-top: 8px;
+}
+
+.create-task-list-form {
+    margin-top: 16px;
+}
+
+.submit {
+    margin-top: 4px;
+}
+
+.create-task-form {
+    margin-top: 8px;
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.create-task-form * {
+    display: block;
+}
